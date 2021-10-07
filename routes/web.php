@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\http\livewire\AlbumList;
-use App\http\livewire\ArtistList;
+use App\http\Livewire\AlbumList;
+use App\http\Livewire\ArtistList;
 
 /*
 |--------------------------------------------------------------------------
