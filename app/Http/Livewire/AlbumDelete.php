@@ -36,7 +36,7 @@ class AlbumDelete extends Component
     {
         // check if the user can delete an album
         if (Auth::user()->cannot('delete', Album::class)) {
-            redirect()->to('artists');
+            redirect()->to('artist.list');
         }
         
         // get album

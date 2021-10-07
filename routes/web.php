@@ -19,8 +19,8 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/artists', ArtistList::class)->middleware(['auth'])->name('artists');
+Route::get('/artists', ArtistList::class)->middleware(['auth'])->name('artist.list');
 
-Route::get('/albums/{id}', AlbumList::class)->middleware(['auth'])->name('albums');
+Route::get('/albums/{id}', AlbumList::class)->middleware(['auth'])->name('album.list');
 
 require __DIR__.'/auth.php';

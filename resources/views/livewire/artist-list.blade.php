@@ -53,7 +53,7 @@
                                         </small>
                                     </td>
                                     <td class="align-middle" style="text-align: right;">                                        
-                                        <a href="{{ route('albums', ['id' => $artist->id]) }}" class="btn btn-success text-white fw-bold">Albums</a>
+                                        <a href="{{ route('album.list', ['id' => $artist->id]) }}" class="btn btn-success text-white fw-bold">Albums</a>
                                     </td>                            
                                 </tr>
                                 @endforeach                          
