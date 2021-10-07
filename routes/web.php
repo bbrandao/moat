@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\http\livewire\AlbumList;
+use App\http\livewire\ArtistList;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/artists', ArtistList::class)->middleware(['auth'])->name('artists');
+
+Route::get('/albums/{id}', AlbumList::class)->middleware(['auth'])->name('albums');
 
 require __DIR__.'/auth.php';

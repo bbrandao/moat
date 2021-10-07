@@ -11,8 +11,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav me-auto">
-                <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                    {{ __('Dashboard') }}
+                <x-nav-link href="{{ route('artists') }}" :active="request()->routeIs('artists')">
+                    {{ __('Artists') }}
                 </x-nav-link>
             </ul>
 

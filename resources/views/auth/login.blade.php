@@ -18,9 +18,9 @@
 
                 <!-- Email Address -->
                 <div class="mb-3">
-                    <x-label for="email" :value="__('Email')" />
+                    <x-label for="username" :value="__('Username')" />
 
-                    <x-input id="email" type="email" name="email" :value="old('email')" required autofocus />
+                    <x-input id="username" type="text" name="username" :value="old('username')" required autofocus />
                 </div>
 
                 <!-- Password -->
@@ -32,24 +32,13 @@
                              required autocomplete="current-password" />
                 </div>
 
-                <!-- Remember Me -->
-                <div class="mb-3">
-                    <div class="form-check">
-                        <x-checkbox id="remember_me" name="remember" />
-
-                        <label class="form-check-label" for="remember_me">
-                            {{ __('Remember Me') }}
-                        </label>
-                    </div>
-                </div>
+                
 
                 <div class="mb-0">
                     <div class="d-flex justify-content-end align-items-baseline">
-                        @if (Route::has('password.request'))
-                            <a class="text-muted me-3" href="{{ route('password.request') }}">
-                                {{ __('Forgot your password?') }}
-                            </a>
-                        @endif
+                        <a class="text-muted me-3 text-decoration-none" href="{{ route('register') }}">
+                            {{ __('New here? Register') }}
+                        </a>
 
                         <x-button>
                             {{ __('Log in') }}

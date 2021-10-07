@@ -22,9 +22,9 @@
 
                 <!-- Email Address -->
                 <div class="mb-3">
-                    <x-label for="email" :value="__('Email')" />
+                    <x-label for="username" :value="__('Username')" />
 
-                    <x-input id="email" type="email" name="email" :value="old('email')" required />
+                    <x-input id="username" type="username" name="username" :value="old('username')" required />
                 </div>
 
                 <!-- Password -->
